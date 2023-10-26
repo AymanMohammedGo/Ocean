@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## NextJs - TypeScript - Tailwind
+
+Demo:
+
+## Features
+
+- Dividing the site into components using NextJs
+- Write clean code and use best practices
+- server components and client components
+- Enhance code security using typescript
+- Build a beautiful UI using tailwindcss
+- Responsive design with all devices using media queries
+- Upload the website online using vercel hosting
 
 ## Getting Started
 
