@@ -1,1 +1,6 @@
-export const navLinks = ["features", "pricing", "testimonials", "contact"];
+export const navLinks: string[] = [
+  "features",
+  "pricing",
+  "testimonials",
+  "contact",
+];
