@@ -3,6 +3,7 @@ import Heading from "@/components/Heading";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
+import { Clinets } from "@/constants/clinet";
 export default function Home() {
   return (
     <main className="overflow-x-hidden pt-24 lg:pt-28 antialiased">
@@ -51,6 +52,23 @@ export default function Home() {
           </div>
         </section>
         {/* Home section */}
+        {/* Clients section */}
+        <section
+          id="clinets"
+          className="max-w-[62rem] mx-auto grid grid-cols-2 md:grid-cols-3  lg:grid-cols-5 gap-x-12 gap-y-4"
+        >
+          {Clinets.map((clinet, index) => (
+            <Image
+              key={index}
+              src={clinet.imageUrl}
+              width={120}
+              height={80}
+              alt={clinet.alt}
+              className="w-40 md:w-full mx-auto"
+            />
+          ))}
+        </section>
+        {/* Clients section */}
       </div>
     </main>
   );
