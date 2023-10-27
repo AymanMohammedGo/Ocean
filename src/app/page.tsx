@@ -8,6 +8,8 @@ import { feature, featuresBlock } from "@/constants/feature";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
 import Pricing from "@/components/Pricing";
+import { testimonial } from "@/constants/Testimonial";
+import TestimonialCart from "@/components/TestimonialCart";
 export default function Home() {
   return (
     <main className=" pt-24 lg:pt-28 antialiased">
@@ -117,6 +119,16 @@ export default function Home() {
           <Pricing />
         </section>
         {/* Pricing section */}
+        {/* Testimonials section */}
+        <section id="testimonials" className="flex flex-col gap-8">
+          <Heading title="Meet our Customers" isCentered />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {testimonial.map((item, index) => (
+              <TestimonialCart key={index} {...item} />
+            ))}
+          </div>
+        </section>
+        {/* Testimonials section */}
       </div>
     </main>
   );
