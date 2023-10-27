@@ -7,6 +7,7 @@ import { Clinets } from "@/constants/clinet";
 import { feature, featuresBlock } from "@/constants/feature";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
+import Pricing from "@/components/Pricing";
 export default function Home() {
   return (
     <main className=" pt-24 lg:pt-28 antialiased">
@@ -109,6 +110,13 @@ export default function Home() {
           {/* port 2 */}
         </section>
         {/* Features section */}
+        {/* Pricing section */}
+        <section id="pricing" className="flex flex-col items-center">
+          <Heading title="Find a plan to power your projects" isCentered />
+
+          <Pricing />
+        </section>
+        {/* Pricing section */}
       </div>
     </main>
   );

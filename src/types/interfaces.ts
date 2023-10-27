@@ -10,3 +10,12 @@ export interface Feature {
 export interface featureBlock extends Feature {
   isReversed?: boolean;
 }
+export interface Pricing {
+  title: string;
+  description: string;
+  monthlyPrice: number;
+  annuallyPrice: number;
+  features: string[];
+  isMostPopular?: boolean;
+  glowPosition?: "right" | "left";
+}
