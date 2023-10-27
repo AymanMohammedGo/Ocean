@@ -4,11 +4,12 @@ import Button from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
 import { Clinets } from "@/constants/clinet";
-import { feature } from "@/constants/feature";
+import { feature, featuresBlock } from "@/constants/feature";
 import FeatureCard from "@/components/FeatureCard";
+import FeatureBlock from "@/components/FeatureBlock";
 export default function Home() {
   return (
-    <main className="overflow-x-hidden pt-24 lg:pt-28 antialiased">
+    <main className=" pt-24 lg:pt-28 antialiased">
       <div className="relative container">
         <Image
           src="/bg.png"
@@ -100,8 +101,12 @@ export default function Home() {
               ))}
             </div>
           </div>
-
           {/* port 1 */}
+          {/* port 2 */}
+          {featuresBlock.map((item, index) => (
+            <FeatureBlock key={index} {...item} />
+          ))}
+          {/* port 2 */}
         </section>
         {/* Features section */}
       </div>

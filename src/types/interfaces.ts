@@ -7,3 +7,6 @@ export interface Feature {
   title: string;
   content: string;
 }
+export interface featureBlock extends Feature {
+  isReversed?: boolean;
+}
