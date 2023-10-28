@@ -8,7 +8,7 @@ import { feature, featuresBlock } from "@/constants/feature";
 import FeatureCard from "@/components/FeatureCard";
 import FeatureBlock from "@/components/FeatureBlock";
 import Pricing from "@/components/Pricing";
-import { testimonial } from "@/constants/Testimonial";
+import { testimonial } from "@/constants/testimonial";
 import TestimonialCart from "@/components/TestimonialCart";
 export default function Home() {
   return (
