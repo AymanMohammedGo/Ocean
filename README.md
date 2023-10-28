@@ -1,6 +1,6 @@
 ## NextJs - TypeScript - Tailwind
 
-Demo:
+Demo: https://ocean-six.vercel.app/
 
 ## Features
 
