@@ -25,3 +25,7 @@ export interface Testimonial {
   role: string;
   review: string;
 }
+export interface FooterColumn {
+  title: string;
+  links: string[];
+}
